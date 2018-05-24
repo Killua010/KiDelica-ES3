@@ -10,9 +10,13 @@
 
     function dadosSalvar() {
       require '..\views\viewHelperPedido.php';
+      require 'SalvarCMD.php';
       $viewHelper = new ViewHelperPedido();
       $ED = $viewHelper->getEntidade();
-      echo $ED->getSabor(); 
+      $slvCMD = new SalvarCMD();
+      $slvCMD->executar($ED);
+      //echo $ED->getSabor();
+
     }
   }
 

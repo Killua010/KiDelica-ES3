@@ -1,6 +1,8 @@
 <?php
-
-interface iCommand {
+/**
+ *
+ */
+interface iStrategy {
   function executar($ED);
 }
 

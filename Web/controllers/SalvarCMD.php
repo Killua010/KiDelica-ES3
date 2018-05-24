@@ -1,13 +1,19 @@
 <?php
 require 'iCommand.php';
 /**
- * 
+ *
  */
-class ClassName implements iCommand{
+class SalvarCMD implements iCommand{
 
-  function __construct(argument)
-  {
-    // code...
+  function __construct() {
+
+  }
+
+  public function executar($ED) {
+    require 'Fachada.php';
+
+    $fachada = new Fachada();
+    $fachada->inserir($ED);
   }
 }
 
