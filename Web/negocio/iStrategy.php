@@ -3,7 +3,7 @@
  *
  */
 interface iStrategy {
-  function executar($ED);
+  function processar($ED);
 }
 
  ?>

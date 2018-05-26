@@ -52,8 +52,8 @@
 
       $Marca = new Marca($marca);
       $Bebida = new Bebida($saborBebida,$marca,$valor, $id, $nome, $descricao);
-
-      return $Bebida;
+      $Pedido = new Pedido($Bebida);
+      return $Pedido;
 
 
 
